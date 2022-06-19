@@ -1,10 +1,10 @@
-#Readme
+# Readme
 
 Here's a tribute page project from freecodecamp
 
 ---
 
-##Contributors
+## Contributors
 
 ---Lilian Balogun 
 

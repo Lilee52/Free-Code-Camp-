@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: hsl(210, 2%, 18%);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-container {
+  flex: 25%;
+  min-width: 350px;
+  height: 99vh;
+  border-right: 5px solid grey;
+  position: fixed;
+}
+
+.heading {
+  overflow: none;
+}
+.links-container {
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+.links-container li {
+  list-style: none;
+}
+
+.links-container li a {
+  text-decoration: none;
+  color: hsl(210, 2%, 18%);
+  font-size: 16px;
+}
+
+h3 {
+  margin: 0.7em;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  color: black;
+}
+
+.links li {
+  margin: 0.78em;
+}
+
+.second-container {
+  flex: 75%;
+  min-width: 200px;
+  padding: 2em;
+}
+
+.second-container p {
+  margin: 2em 0;
+}
+
+section p {
+  font-size: 15px;
+}
+
+section ul {
+  font-size: 15px;
+  padding-left: 5em;
+}
+
+section ul li {
+  margin-bottom: 2em;
+}
+
+.inner-code {
+  background: rgb(251, 251, 251);
+  width: 90%;
+  min-height: 8vh;
+  line-height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-left: 3em;
+}
+
+.inner-code p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.last {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .first-container {
+    flex: 20%;
+    min-height: 38vh;
+    position: relative;
+    border: 1px solid black;
+    
+  }
+
+  .links-container {
+    max-height: 30vh;
+    border-top: 3px solid grey;
+    border-bottom: 5px solid grey;
+  }
+
+  header {
+   margin-top: -0.3em;
+   margin-bottom: 0.8em;
+  }
+
+  section p {
+    padding-left: 1.2em;
+  }
+
+  .inner-code {
+    padding-left: 1em;
+  }
+
+  .last {
+    margin-bottom: 2em;
+  }
+  
+}
+
+@media (max-width: 3024px) and (min-width: 1000px) {
+  .first-container {
+    flex: 30%;
+    min-width: 400px;
+  }
+
+  .second-container {
+    flex: 70%;
+    margin-left: 400px;
+  }
+}
